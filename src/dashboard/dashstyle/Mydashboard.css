@@ -1,0 +1,45 @@
+/* src/dashboard/dashstyle/Mydashboard.css */
+
+.dashboard-container {
+    padding: 20px;
+    padding-left: 20rem;
+    font-family: sans-serif;
+  }
+  
+  .dashboard-summary {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .summary-item {
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .summary-revenue {
+    background-color: #e8f5e9; /* Light Green */
+  }
+  
+  .summary-orders {
+    background-color: #e3f2fd; /* Light Blue */
+  }
+  
+  .summary-stock {
+    background-color: #fbe9e7; /* Light Orange */
+  }
+  
+  .manage-products-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .manage-products-button:hover {
+    background-color: #367c39;
+  }

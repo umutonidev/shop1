@@ -1,0 +1,49 @@
+/* src/dashboard/Payments.css */
+.payments-container {
+  padding: 20px;
+  padding-left: 20rem;
+  font-family: sans-serif;
+}
+
+.payments-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.payments-table th, .payments-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.payments-table th {
+  background-color: #f0f0f0;
+}
+
+.process-payment-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;  /* Adjust padding */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 5px; /* Add space between buttons */
+}
+
+.process-payment-button:hover {
+  background-color: #367c39;
+}
+
+.remove-payment-button {
+  background-color: #f44336; /* Red for remove */
+  color: white;
+  padding: 10px 15px; /* Adjust padding */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.remove-payment-button:hover {
+  background-color: #d32f2f;
+}

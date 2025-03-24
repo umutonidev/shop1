@@ -1,0 +1,125 @@
+/* Checkout.css */
+
+.checkout-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+    width: 100%;
+    max-width: 800px; /* Adjust the max-width as needed */
+    margin: 24px auto; /* Center the component */
+    font-family: sans-serif;
+  }
+  
+  .checkout-header {
+    margin-bottom: 24px;
+    text-align: left;
+    display: flex;            /* Use flexbox for alignment */
+    align-items: center;      /* Vertically center items */
+    justify-content: flex-start; /* Align items to the left */
+  }
+  
+  .checkout-header h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1e293b;
+    margin-right: 10px;      /* Add some spacing between the heading and the logo */
+  }
+  
+  .mtn-logo {
+    height: 30px;            /* Adjust the height as needed */
+    width: auto;
+  }
+  
+  .checkout-content {
+    display: flex;
+    gap: 24px;
+  }
+  
+  .unpaid-orders-section {
+    flex: 1;
+    background-color: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    padding: 16px;
+  }
+  
+  .unpaid-orders-section h2 {
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: #374151;
+  }
+  
+  .unpaid-orders-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .unpaid-orders-section li {
+    padding: 8px 12px;
+    border-bottom: 1px solid #e5e7eb;
+    cursor: pointer;
+  }
+  
+  .unpaid-orders-section li:last-child {
+    border-bottom: none;
+  }
+  
+  .payment-section {
+    flex: 1;
+  }
+  
+  .form-group {
+    margin-bottom: 16px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 14px;
+    color: #4b5563;
+    margin-bottom: 6px;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+  
+  .form-group input:focus {
+    border-color: #2563eb;
+  }
+  
+  .pay-now-button {
+    background-color: #228b22;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+  }
+  
+  .pay-now-button:hover {
+    background-color: #196f19;
+  }
+  
+  /* Media query for responsiveness */
+  @media (max-width: 768px) {
+    .checkout-content {
+      flex-direction: column;
+    }
+  
+    .unpaid-orders-section,
+    .payment-section {
+      flex: none;
+      width: 100%;
+    }
+  }

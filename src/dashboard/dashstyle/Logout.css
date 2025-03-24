@@ -1,0 +1,25 @@
+/* Logout.css */
+
+.logout-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height */
+  width: 100vw;  /* Full width */
+  background-color: #f8f9fa; /* Light background */
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  animation: fadeOut 1.5s ease-in-out;
+}
+
+/* Optional loading effect */
+@keyframes fadeOut {
+  0% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0.5;
+  }
+}

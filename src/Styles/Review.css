@@ -1,0 +1,145 @@
+.reviews-container {
+    font-family: Arial, sans-serif;
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.reviews-container h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Customer Reviews Section */
+.customer-reviews {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.customer-reviews h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin: 0;
+}
+
+.customer-reviews .customer-review-stars .star {
+    color: #ffc107; /* Gold */
+    font-size: 1em;
+}
+
+.customer-reviews .based-on {
+    font-size: 0.9em;
+    color: #777;
+    margin-left: 5px;
+}
+
+.customer-reviews .write-a-review {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+/* Write Review Form */
+.write-review-form {
+    margin-top: 20px;
+}
+
+.write-review-form h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.write-review-form .form-group {
+    margin-bottom: 15px;
+}
+
+.write-review-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.write-review-form .input-with-icon {
+    position: relative;
+    width: 100%;
+}
+
+.write-review-form .input-with-icon .icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #777;
+}
+
+.write-review-form input[type="text"],
+.write-review-form input[type="email"],
+.write-review-form textarea {
+    width: 100%;
+    padding: 10px 40px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+.write-review-form textarea {
+    height: 150px;
+    resize: vertical;
+    padding-right: 20px;
+}
+
+.write-review-form .rating-stars {
+    display: flex;
+}
+
+.write-review-form .rating-stars .star {
+    font-size: 1.5em;
+    color: #ccc;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.write-review-form .rating-stars .star.active {
+    color: #ffc107;
+}
+
+.write-review-form .submit-review-button {
+    background-color: #343a40;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.write-review-form .submit-review-button:hover {
+    background-color: #1e2125;
+}
+
+
+/* Yves Review */
+.yves-review {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    font-size: 0.9em;
+    color: #555;
+}
+
+.yves-review p:first-child {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}

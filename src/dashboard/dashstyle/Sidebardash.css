@@ -1,0 +1,50 @@
+/* Sidebar.css */
+.sidebar {
+  width: 250px; /* Adjust width */
+  background-color: #343a40; /* Dark background from image */
+  color: #fff;
+  height: 100vh; /* Full height */
+  position: fixed; /* Stay in place */
+  top: 0;
+  left: 0;
+  padding: 20px;
+}
+
+.sidebar .logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.sidebar .logo-image {
+  width: 30px; /* Adjust logo size */
+  margin-right: 10px;
+}
+
+.sidebar .navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar .navigation li {
+  margin-bottom: 15px;
+}
+
+.sidebar .navigation a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+}
+
+.sidebar .navigation a:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Slight highlight on hover */
+}
+
+.sidebar .navigation i {
+  margin-right: 10px;
+}

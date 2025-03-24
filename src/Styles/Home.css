@@ -1,0 +1,472 @@
+
+  /* General styles if needed */
+
+
+/* Services Section */
+.services-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+  background-color: #f9f9f9;
+}
+
+.service-box {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  width: 20%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.service-box h3 {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.service-box p {
+  font-size: 0.9em;
+  color: #777;
+}
+
+/* Top Categories Section */
+.top-categories-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.top-categories-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.top-categories-header h2 {
+  font-size: 1.5em;
+  color: #333;
+  margin: 0;
+}
+
+.top-categories-header a {
+  color: #e67e22;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.categories-scroll-container {
+  display: flex;
+  overflow: hidden; /* Hide the scrollbar */
+  scroll-behavior: smooth;
+  padding-bottom: 15px;
+}
+
+.category-card {
+  flex: 0 0 auto;
+  width: 250px; /* Adjust card width */
+  height: 200px; /* Adjust card height */
+  margin-right: 15px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.category-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.category-label {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.orders-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(0, 45, 87, 0.8);
+  color: white;
+  padding: 5px 8px;
+  border-radius: 5px;
+  font-size: 0.8em;
+}
+
+/* Animate the scrolling */
+.categories-scroll-container {
+  animation: scrollCategories 30s linear infinite; /* Adjust speed with duration */
+}
+
+@keyframes scrollCategories {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%); /* Move all content off-screen */
+  }
+}
+
+/* Featured Products Section */
+.featured-products-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.featured-products-container h2 {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+  gap: 20px;
+}
+
+.product-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+
+.wishlist-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #777;
+  cursor: pointer;
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.brand {
+  font-weight: bold;
+  color: #e67e22;
+  margin-bottom: 5px;
+}
+
+.product-name {
+  font-size: 0.9em;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.ratings {
+  margin-bottom: 8px;
+}
+
+.star {
+  color: gold;
+  font-size: 0.8em;
+}
+
+.price {
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Most Bought Products Section */
+.most-bought-products-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.most-bought-products-container h2 {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.most-bought-grid {
+  display: flex;
+  overflow-x: auto;
+  padding-bottom: 15px;
+}
+
+.most-bought-card {
+  flex: 0 0 auto;
+  width: 250px;
+  margin-right: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+}
+
+.most-bought-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.most-bought-card .brand {
+  font-weight: bold;
+  color: #e67e22;
+  margin-bottom: 5px;
+}
+
+.most-bought-card .product-name {
+  font-size: 0.9em;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.most-bought-card .ratings {
+  margin-bottom: 8px;
+}
+
+.most-bought-card .star {
+  color: gold;
+  font-size: 0.8em;
+}
+
+.most-bought-card .price {
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.most-bought-card .progress-bar {
+  width: 100%;
+  height: 8px;
+  background-color: #eee;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.most-bought-card .progress-bar-fill {
+  height: 100%;
+  background-color: #007bff;
+  border-radius: 5px;
+}
+
+.most-bought-card .add-to-cart-button {
+  background-color: #333;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: background-color 0.3s ease;
+}
+
+.most-bought-card .add-to-cart-button:hover {
+  background-color: #555;
+}
+
+/* Brand Logos Section */
+.brand-logos-container {
+  padding: 20px;
+  background-color: white;
+  overflow: hidden; /* Ensures the animation doesn't cause overflow */
+  position: relative; /*  Required for absolute positioning of duplicates */
+}
+
+.brand-logos-scroll {
+  display: flex;
+  animation: scrollLogos 20s linear infinite; /* Adjust speed as needed */
+  width: auto; /*  Important: Let content define width */
+  white-space: nowrap; /*  Prevent logos from wrapping */
+}
+
+@keyframes scrollLogos {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%); /* Move the content completely to the left */
+  }
+}
+
+.brand-logo {
+  width: 150px;
+  height: auto;
+  margin: 10px;
+  object-fit: contain; /* Scale the image to fit within the container */
+  display: inline-block; /*  Prevent gaps between logos */
+}
+
+/* Our Latest Blogs Section */
+.latest-blogs-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.latest-blogs-container h2 {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.blog-posts {
+  display: flex;
+  overflow-x: auto;
+  padding-bottom: 15px;
+}
+
+.blog-card {
+  flex: 0 0 auto;
+  width: 300px;
+  margin-right: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+}
+
+.blog-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.blog-date {
+  font-size: 0.8em;
+  color: #777;
+  margin-bottom: 5px;
+}
+
+.blog-title {
+  font-size: 1.1em;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.blog-description {
+  font-size: 0.9em;
+  color: #555;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+.read-more-button {
+  background-color: #333;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: background-color 0.3s ease;
+}
+
+.read-more-button:hover {
+  background-color: #555;
+}
+
+/* Banner Ads Section */
+.banner-ads-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f9f9f9; /* Optional: Add a background color */
+}
+
+.banner-ad {
+  width: 48%; /* Two banners with some spacing */
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .service-box {
+    width: 30%;
+  }
+
+  .category-card {
+    width: 200px;
+    height: 160px;
+  }
+
+  .product-card, .most-bought-card {
+    width: 45%;
+  }
+
+  .blog-card {
+    width: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-box {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .categories-scroll-container {
+    flex-direction: column;
+  }
+
+  .category-card {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .most-bought-grid {
+    flex-direction: column;
+  }
+
+  .blog-posts {
+    flex-direction: column;
+  }
+
+  .banner-ads-container {
+    flex-direction: column;
+  }
+
+  .banner-ad {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .top-categories-header h2, .featured-products-container h2,
+  .most-bought-products-container h2, .latest-blogs-container h2 {
+    font-size: 1.2em;
+  }
+
+  .category-card {
+    width: 90%;
+    margin-right: 0;
+  }
+
+  .product-card, .most-bought-card {
+    width: 100%;
+  }
+
+  .blog-card {
+    width: 100%;
+  }
+}

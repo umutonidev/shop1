@@ -1,0 +1,259 @@
+/* Styles/Store.css */
+
+.store-container {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+}
+
+.store-header {
+  padding: 20px;
+  text-align: center;
+}
+
+.store-header nav a {
+  text-decoration: none;
+  color: #333;
+  margin-right: 5px;
+}
+
+.store-header nav a:hover {
+  text-decoration: underline;
+}
+
+.store-main {
+  display: flex;
+  flex: 1;
+  padding: 20px;
+}
+
+.store-sidebar {
+  width: 400px; /* Increased Sidebar Width */
+  margin-right: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.store-sidebar h2 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.tag-button {
+  background-color: #eee;
+  border: none;
+  padding: 8px 12px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.2s;
+}
+
+.tag-button:hover {
+  background-color: #ddd;
+}
+
+.random-product {
+  margin-top: 20px;
+}
+
+.random-product-grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr)); /* One product per row */
+  gap: 20px; /* Space between products */
+}
+
+.random-product-card {
+  text-align: center; /* Center content within each card */
+  border: 1px solid #ccc;  /* Add a border */
+  padding: 10px;         /* Add some padding */
+  border-radius: 5px;      /* Add rounded corners */
+}
+
+.product-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 15px;
+}
+
+.product-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.product-image {
+  width: 100%;
+  max-height: 150px;
+  object-fit: contain;
+  margin-right: 15px;
+  transition: transform 0.3s ease, opacity 1s ease-in-out;
+}
+
+.product-image:hover {
+  transform: scale(1.1);
+}
+
+.product-details {
+  flex: 1;
+}
+
+.product-details p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.star-rating {
+  color: gold;
+  font-size: 1rem;
+  margin-top: 5px;
+}
+
+.empty-star {
+  color: white;
+}
+
+.product-listing {
+  flex: 1;
+}
+
+.product-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.sort-by {
+  display: flex;
+  align-items: center;
+}
+
+.sort-by span {
+  margin-right: 10px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.sort-by select {
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 0.9rem;
+}
+
+.product-count span {
+  font-size: 0.9rem;
+  color: #555;
+  margin-right: 10px;
+}
+
+.view-button {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 5px;
+  transition: background-color 0.2s;
+}
+
+.view-button:hover {
+  background-color: #eee;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-brand {
+  font-size: 0.8rem;
+  color: #777;
+  margin-bottom: 5px;
+}
+
+.product-name {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.product-description {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 10px;
+  height: 60px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+ 
+  -webkit-box-orient: vertical;
+}
+
+.product-price {
+  font-size: 1.1rem;
+  color: #007bff;
+  margin-top: 5px;
+}
+
+.like-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #fff;
+  transition: color 0.2s ease;
+}
+
+.like-button:hover {
+  color: #e25555;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .store-main {
+      flex-direction: column;
+  }
+
+  .store-sidebar {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 20px;
+  }
+
+  .product-grid {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}

@@ -1,0 +1,35 @@
+/* src/dashboard/Orders.css */
+.orders-container {
+  padding: 20px;
+  padding-left: 20rem;
+  font-family: sans-serif;
+}
+
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.orders-table th, .orders-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.orders-table th {
+  background-color: #f0f0f0;
+}
+
+.view-order-button {
+  background-color: #008CBA;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.view-order-button:hover {
+  background-color: #005f75;
+}

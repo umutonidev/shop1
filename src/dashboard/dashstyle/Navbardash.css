@@ -1,0 +1,53 @@
+/* Navbar.css */
+.navbar {
+  background-color:#343a40 ; /* White background */
+  color:white #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd; /* Light border */
+}
+
+.navbar-left .menu-toggle {
+  background: none;
+  border: none;
+  font-size: 20px; /* Hamburger icon size */
+  cursor: pointer;
+}
+
+.navbar-right .profile {
+  display: flex;
+  align-items: center;
+
+}
+
+.navbar-right .profile-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.navbar-right .admin-label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.navbar-right .logout-button {
+  background-color: #f44336; /* Red */
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-right .logout-button:hover {
+  background-color:green ;
+}
