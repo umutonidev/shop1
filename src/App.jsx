@@ -19,7 +19,7 @@ import Layoutdash from "./dashboard/Layoutdash";
 import Dashview from"./dashboard/Dashview";
 import Product from "./dashboard/Product";
 import Products from "./dashboard/Products";
-import Profile from "./dashboard/profile";
+import Profile from "./dashboard/Profile.jsx";
 import Logout from "./dashboard/Logout";
 import Orders from"./dashboard/Orders";
 import Payments from "./dashboard/Payments";
