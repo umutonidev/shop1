@@ -19,7 +19,7 @@ import Layoutdash from "./dashboard/Layoutdash";
 import Dashview from"./dashboard/Dashview";
 import Product from "./dashboard/Product";
 import Products from "./dashboard/Products";
-import Profile from "./dashboard/Profile.jsx";
+import Profile from "./dashboard/Profile";
 import Logout from "./dashboard/Logout";
 import Orders from"./dashboard/Orders";
 import Payments from "./dashboard/Payments";
@@ -36,7 +36,7 @@ function App() {
           <Route path="Home1"element={<Home1/>}/>
           <Route path="Home"element={<Home/>}/>
           <Route path="Buy"element={<Buy/>}/>
-          <Route path="store" element={<Store />} />
+          <Route path="Store" element={<Store />} />
           <Route path="/Blog" element={<Blog/>}/>
           <Route path="/Contact" element={<Contact/>}/>
           <Route path="/Loginform" element={<Loginform/>}/>
